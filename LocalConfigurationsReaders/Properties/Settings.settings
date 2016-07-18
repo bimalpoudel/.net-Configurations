@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LocalConfigurationsReaders.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DatabaseUsername" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="DatabasePassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">toor</Value>
+    </Setting>
+    <Setting Name="DatabasePort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3036</Value>
+    </Setting>
+    <Setting Name="DatabaseHostname" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="DatabaseDatabaseName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">configurations</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

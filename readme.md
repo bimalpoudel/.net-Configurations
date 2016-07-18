@@ -1,0 +1,1 @@
+C# based resource for reading Configurations

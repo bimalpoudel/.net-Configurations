@@ -4,10 +4,12 @@ using System.Security.Cryptography;
 using System.Security;
 using System.Collections;
 using System.Text;
+
 /**
  * @see www.codeproject.com/Articles/28678/Generating-Unique-Key-Finger-Print-for-a-Computer
  */
- /**
+
+/**
 namespace Configurations.HardwareIdentities
 {
     /// <summary>

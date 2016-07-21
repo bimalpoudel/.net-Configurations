@@ -2,24 +2,31 @@
 using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Configurations.HardwareIdentities;
+using System.IO;
+
+// @see https://msdn.microsoft.com/en-us/library/system.io.file.delete(v=vs.110).aspx
 
 namespace Configurations.UnitTests
 {
+    /**
+     * To verify that the system can write to arbitrary files
+     */
     /// <summary>
-    /// Summary description for HardwareIdentitiesUnitTest1
+    /// Summary description for FileWriteTests
     /// </summary>
     [TestClass]
-    public class HardwareIdentitiesUnitTest1
+    public class FilesWriteTests
     {
-        public HardwareIdentitiesUnitTest1()
+        string filePath = @"c:\logger-filewriter-tests.log";
+
+        private TestContext testContextInstance;
+
+        public FilesWriteTests()
         {
             //
             // TODO: Add constructor logic here
             //
         }
-
-        private TestContext testContextInstance;
 
         /// <summary>
         ///Gets or sets the test context which provides
@@ -58,13 +65,37 @@ namespace Configurations.UnitTests
         // public void MyTestCleanup() { }
         //
         #endregion
+        
+        [TestMethod]
+        [TestCategory("File Writer")]
+        public void FileDoesNotExist()
+        {
+            Assert.IsFalse(File.Exists(filePath));
+        }
+
 
         [TestMethod]
-        public void TestMethod1()
+        [TestCategory("File Writer")]
+        public void FileCanWrite()
         {
-            //
-            // TODO: Add test logic here
-            //
+            File.WriteAllText(filePath, "I am a test log.");
+            Assert.IsTrue(File.Exists(filePath));
+        }
+
+        [TestMethod]
+        [TestCategory("File Writer")]
+        public void FileExists()
+        {
+            Assert.IsTrue(File.Exists(filePath));
+        }
+
+        [TestMethod]
+        [TestCategory("File Writer")]
+        public void FileCanDelete()
+        {
+            Assert.IsTrue(File.Exists(filePath));
+            File.Delete(filePath);
+            Assert.IsFalse(File.Exists(filePath));
         }
     }
 }

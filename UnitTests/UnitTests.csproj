@@ -52,7 +52,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="FilesWriteTests.cs" />
     <Compile Include="HardwareIdentitiesUnitTest1.cs" />
+    <Compile Include="LoggerTests.cs" />
     <Compile Include="UnitTestDatabaseConfigurations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -61,10 +63,19 @@
       <Project>{3FF19F13-014F-4576-8A40-04E8094735BD}</Project>
       <Name>LocalConfigurations</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LogWriter\LogWriters.csproj">
+      <Project>{E62CF132-240E-48C2-91FC-E49E83A32EE4}</Project>
+      <Name>LogWriters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MACAddresses\HardwareIdentities.csproj">
       <Project>{B4F460CE-E1AA-495C-80E5-48E47BD0DE25}</Project>
       <Name>HardwareIdentities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FileWritingOrderly.orderedtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

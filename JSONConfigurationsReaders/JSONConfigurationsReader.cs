@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Configurations.JSONConfigurationsReaders
 {
+    /**
+     * Read JSON Configurations from API Server
+     */
     public class JSONConfigurationsReader
     {
     }

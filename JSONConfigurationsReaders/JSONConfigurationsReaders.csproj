@@ -7,7 +7,7 @@
     <ProjectGuid>{91710527-F12B-4CAF-9340-ED6D0898DB25}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JSONConfigurationsReaders</RootNamespace>
+    <RootNamespace>Configurations.JSONConfigurationsReaders</RootNamespace>
     <AssemblyName>JSONConfigurationsReaders</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

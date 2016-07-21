@@ -46,6 +46,7 @@ namespace Configurations.HardwareIdentities
                         Console.Write("-");
                     }
                 }
+
                 Console.WriteLine();
             }
         }

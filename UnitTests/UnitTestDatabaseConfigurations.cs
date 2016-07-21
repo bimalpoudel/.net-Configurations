@@ -8,14 +8,16 @@ namespace Configurations.UnitTests
     [TestClass]
     public class UnitTestDatabaseConfigurations
     {
-        [TestMethod]
-        public void TestMethod1()
+        [TestMethod()]
+        [TestCategory("Database Configurations")]
+        public void NICAddresses()
         {
             NICAddresses na = new NICAddresses();
         }
 
-        [TestMethod]
-        public void TestDatabaseConfigurations()
+        [TestMethod()]
+        [TestCategory("Database Configurations")]
+        public void DatabaseConfigurations()
         {
             ApplicationConfigurations ac = new ApplicationConfigurations();
 
@@ -26,13 +28,14 @@ namespace Configurations.UnitTests
             Assert.AreNotEqual("", ac.database.database);
         }
 
-        [TestMethod]
-        public void TestDatabaseConfigurationsValues()
+        [TestMethod()]
+        [TestCategory("Database Configurations")]
+        public void DatabaseConfigurationsValues()
         {
             ApplicationConfigurations ac = new ApplicationConfigurations();
 
             Assert.AreEqual("localhost", ac.database.hostname, false, "Hostname defined");
-            Assert.AreEqual("3036", ac.database.portnumber, false, "Port number defined");
+            Assert.AreEqual("3306", ac.database.portnumber, false, "Port number defined");
             Assert.AreEqual("root", ac.database.username, false, "Username defined");
             Assert.AreEqual("toor", ac.database.password, false, "Password defined");
             Assert.AreEqual("test", ac.database.database, false, "Database defined");

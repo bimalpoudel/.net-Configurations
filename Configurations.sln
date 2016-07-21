@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Examples\Exampl
 		{B4F460CE-E1AA-495C-80E5-48E47BD0DE25} = {B4F460CE-E1AA-495C-80E5-48E47BD0DE25}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogWriters", "LogWriter\LogWriters.csproj", "{E62CF132-240E-48C2-91FC-E49E83A32EE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{7E26559D-2EA2-470C-8336-BBD82F3C9B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E26559D-2EA2-470C-8336-BBD82F3C9B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E26559D-2EA2-470C-8336-BBD82F3C9B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E62CF132-240E-48C2-91FC-E49E83A32EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E62CF132-240E-48C2-91FC-E49E83A32EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E62CF132-240E-48C2-91FC-E49E83A32EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E62CF132-240E-48C2-91FC-E49E83A32EE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

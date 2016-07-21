@@ -1,3 +1,11 @@
 /.vs
 /**/bin
 /**/obj
+/TestResults
+/Examples/Areas
+/Examples/bin
+/Examples/Content
+/Examples/obj
+/Examples/Scripts
+/Examples/Service References
+/packages

@@ -7,7 +7,7 @@
     <ProjectGuid>{B4F460CE-E1AA-495C-80E5-48E47BD0DE25}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MACAddresses</RootNamespace>
+    <RootNamespace>Configurations.HardwareIdentities</RootNamespace>
     <AssemblyName>MACAddresses</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
